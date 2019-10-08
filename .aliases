@@ -1,0 +1,27 @@
+#!/usr/bin/env zsh
+
+# alias of wsl -> ubuntu 18.04
+alias cdc="cd /mnt/c"
+alias cdd="cd /mnt/d"
+alias cde="cd /mnt/e"
+alias cdf="cd /mnt/f"
+alias redis="redis-cli -h 127.0.0.1"
+alias dock="sudo cgroupfs-mount;sudo service docker start;docker version;"
+# docker aliases
+alias di='docker images' 
+alias dia='docker images -a'
+alias drmi='docker rmi' 
+alias didn='docker_images_delete_none'  
+alias dst='docker start'
+alias dsp='docker stop'
+alias drs='docker restart' 
+alias dp='docker ps' 
+alias dpa='docker ps -a' 
+alias drm='docker rm'
+alias drd='docker run -d'
+alias drdp='docker run -d -p'
+alias drit='docker run -it'
+alias drdit='docker run -d -it'
+alias deit='docker exec -it'
+alias din='docker inspect'
+alias dt='docker tag'

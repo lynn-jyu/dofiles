@@ -1,0 +1,16 @@
+" Vim 的默认寄存器和系统剪贴板共享
+set clipboard+=unnamed
+set history=100000
+" select模式下复制
+if has("clipboard")
+    vnoremap <C-C> "+y
+endif
+" 显示相对行
+set rnu
+"进入vim模式下，自动切换为英文输入法，进入编辑模式，又切换原来的输入法 与ideaVimExtension配合
+set keep-english-in-normal-and-restore-in-insert
+
+set encoding=utf-8
+
+"模拟vim-surround ys，cs，ds，S
+set surround
