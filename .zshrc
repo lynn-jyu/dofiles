@@ -65,15 +65,19 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom aliases
 for file in ~/.{aliases,functions}; do
-	[ -r $file ] && [ -f $file ] && source $file;
+[ -r $file ] && [ -f $file ] && source $file;
 done;
 
 # Fix mkdir command has wrong permissions 'cause WSL has a bug 
-if grep -q Microsoft /proc/version; then
-	if [ "$(umask)" = "0000" ]; then
-		umask 0022
-	fi
+# See https://github.com/microsoft/WSL/issues/352
+if [ "$(umask)" = '000' ]; then
+  if [ -e /etc/login.defs ] && grep -q '^[[:space:]]*USERGROUPS_ENAB[[:space:]]\{1,\}yes' /etc/login.defs;then
+    umask 002
+  else
+    umask 022
+  fi
 fi
+
 
 # User configuration
 
