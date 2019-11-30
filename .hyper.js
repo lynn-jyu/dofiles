@@ -141,6 +141,9 @@ module.exports = {
     webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    systray: {
+      hotkey: 'Alt+`'
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -154,7 +157,8 @@ module.exports = {
     "hyper-pane",
     "hyper-search",
     "hyper-highlight-active-pane",
-    "hyper-launch-menu"
+    "hyper-launch-menu",
+    "hyper-systray",
   ],
 
   // in development, you can create a directory under
@@ -165,5 +169,7 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
+    "tab:new": "ctrl+t",
+    "editor:paste": "ctrl+v"
   },
 };
