@@ -159,6 +159,7 @@ module.exports = {
     "hyper-highlight-active-pane",
     "hyper-launch-menu",
     "hyper-systray",
+    "hypercwd"
   ],
 
   // in development, you can create a directory under
