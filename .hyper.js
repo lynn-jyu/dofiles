@@ -143,6 +143,9 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
     systray: {
       hotkey: 'Alt+`'
+    },
+    summon: {
+      hotkey: 'Alt+`'
     }
   },
 
@@ -157,9 +160,8 @@ module.exports = {
     "hyper-pane",
     "hyper-search",
     "hyper-highlight-active-pane",
-    "hyper-launch-menu",
-    "hyper-systray",
-    "hypercwd"
+//    "hyper-systray"
+    "hyperterm-summon"
   ],
 
   // in development, you can create a directory under
