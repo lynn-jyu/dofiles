@@ -13,7 +13,8 @@ module.exports = {
 
     // font family with optional fallbacks
     // fontFamily: '"DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Menlo',
-    fontFamily: '"Fira Code"',
+    //fontFamily: '"Fira Code"',
+    //fontFamily: 'Consolas',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -104,12 +105,12 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\Windows\\system32\\wsl.exe',
+    // shell: 'C:\\Windows\\system32\\wsl.exe',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     // shellArgs: ['--login', '-i', '/c wsl'],
-    shellArgs: ['~'],
+    // shellArgs: ['~'],
 
 
     // for environment variables
@@ -161,7 +162,7 @@ module.exports = {
     "hyper-search",
     "hyper-highlight-active-pane",
 //    "hyper-systray"
-    "hyperterm-summon"
+    //"hyperterm-summon"
   ],
 
   // in development, you can create a directory under
