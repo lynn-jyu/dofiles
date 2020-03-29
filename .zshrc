@@ -59,11 +59,11 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git zsh-autosuggestions vi-mode zsh-proxy)
+plugins=(git zsh-autosuggestions vi-mode autojump)
 
 source $ZSH/oh-my-zsh.sh
 
-# Custom aliases
+# Custom aliases & funtions
 for file in ~/.{aliases,functions}; do
 [ -r $file ] && [ -f $file ] && source $file;
 done;
