@@ -3,6 +3,6 @@
 - .zshrc
 - .aliases
 - .vimrc
-- _ideavimrc
+- .ideavimrc
 
-Config Files Of Linux & Windows Sub System Of Linux(WSL)
+Config Files Of Mac OS X
