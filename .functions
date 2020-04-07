@@ -3,7 +3,7 @@
 proxy() {
 
   export ALL_PROXY=http://127.0.0.1:1087
-  # export ALL_PROXY=sock5://127.0.0.1:1086
+  #export ALL_PROXY=sock5://127.0.0.1:1086
   checkIp
 }
 
@@ -13,15 +13,11 @@ noproxy() {
 }
 
 checkIp() {
-  curl -s https://api-ipv4.ip.sb/ip
   echo "========================================"
   echo "Check what your IP is"
   echo "----------------------------------------"
   echo -n "IPv4: "
   curl -s https://api-ipv4.ip.sb/ip
-  echo "----------------------------------------"
-  echo -n "IPv6: "
-  curl -s https://api-ipv6.ip.sb/ip
 
   if command -v python >/dev/null; then
     echo "----------------------------------------"

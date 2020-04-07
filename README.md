@@ -2,6 +2,7 @@
 
 - .zshrc
 - .aliases
+- .functions
 - .vimrc
 - .ideavimrc
 
