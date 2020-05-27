@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 proxy() {
-  export ALL_PROXY=http://127.0.0.1:1087
-  #export ALL_PROXY=sock5://127.0.0.1:1086
+  export ALL_PROXY=http://127.0.0.1:7890
+  #export ALL_PROXY=sock5://127.0.0.1:7891
   checkIp
 }
 
